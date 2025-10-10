@@ -4,32 +4,56 @@ name = "RMK Keyboard"
 product_name = "RMK Keyboard"
 vendor_id = 0x4c4b
 product_id = 0x4643
-manufacturer = "haobo"
-chip = "rp2040"
+manufacturer = "cube studio"
+board = "nice!nano_v2"
 
-[matrix]
-# Input and output pins are mandatory
-input_pins = ["PIN_6", "PIN_7", "PIN_8", "PIN_9"]
-output_pins = ["PIN_19", "PIN_20", "PIN_21"]
-# WARNING: Currently row2col/col2row is set in RMK's feature gate, configs here do nothing actually
-# row2col = true
+[split]
+# split connection type
+connection = "ble"
+
+# Split central
+[split.central]
+# Central's matrix definition and offsets
+rows = 4
+cols = 3
+row_offset = 0
+col_offset = 0
+
+[split.central.matrix]
+matrix_type = "normal"
+input_pins = ["P0_29", "P0_02", "P1_13", "P0_03"]
+output_pins = ["P1_06", "P0_10", "P0_09"]
+
+
+[[split.peripheral]]
+rows = 4
+cols = 3
+row_offset = 0
+col_offset = 3
+
+
+[split.peripheral.matrix]
+matrix_type = "normal"
+input_pins = ["P0_29", "P0_02", "P1_13", "P0_03"]
+output_pins = ["P1_06", "P0_10", "P0_09"]
+
 
 [layout]
 rows = 4
-cols = 3
+cols = 6
 layers = 2
 keymap = [
     [
-        ["A", "B", "C"],
-        ["Kc1", "Kc2", "Kc3"],
-        ["LCtrl", "MO(1)", "LShift"],
-        ["OSL(1)", "LT(2, Kc9)", "LM(1, LShift | LGui)"]
+        ["A", "B", "C","A", "B", "C"],
+        ["Kc1", "Kc2", "Kc3","A", "B", "C"],
+        ["LCtrl", "MO(1)", "LShift","A", "B", "C"],
+        ["OSL(1)", "LT(2, Kc9)", "LM(1, LShift | LGui)","A", "B", "C"]
     ],
     [
-        ["_", "TT(1)", "TG(2)"],
-        ["_", "_", "_"],
-        ["_", "_", "_"],
-        ["_", "_", "_"]
+        ["_", "TT(1)", "TG(2)","A", "B", "C"],
+        ["_", "_", "_","A", "B", "C",
+        ["_", "_", "_","A", "B", "C"],
+        ["_", "_", "_","A", "B", "C"]
     ],
 ]
 
