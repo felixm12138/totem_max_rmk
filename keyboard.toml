@@ -150,16 +150,14 @@ keymap = [
 
 
 [split]
-connection = "serial"
+# split connection type
+connection = "ble"
 
 [split.central]
 rows = 7
 cols = 6
 row_offset = 0
 col_offset = 0
-serial = [
-    { instance = "UART0", tx_pin = "PIN_0", rx_pin = "PIN_1" },
-]
 
 [split.central.matrix]
 input_pins = ["P0_12", "P0_13", "P0_14", "P0_15","P1_11", "P1_10", "P0_30"]
