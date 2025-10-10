@@ -4,8 +4,28 @@ name = "RMK Keyboard"
 product_name = "RMK Keyboard"
 vendor_id = 0x4c4b
 product_id = 0x4643
-manufacturer = "cube studio"
-board = "nice!nano_v2"
+manufacturer = "cube_studio"
+board = "nice!nano_v2" 
+
+[layout]
+rows = 4
+cols = 6
+layers = 2
+keymap = [
+    [
+        ["A", "B", "C","A", "B", "C"],
+        ["Kc1", "Kc2", "Kc3","A", "B", "C"],
+        ["LCtrl", "MO(1)", "LShift","A", "B", "C"],
+        ["OSL(1)", "LT(2, Kc9)", "LM(1, LShift | LGui)","A", "B", "C"]
+    ],
+    [
+        ["_", "TT(1)", "TG(2)","A", "B", "C"],
+        ["_", "_", "_","A", "B", "C",
+        ["_", "_", "_","A", "B", "C"],
+        ["_", "_", "_","A", "B", "C"]
+    ],
+]
+
 
 [split]
 # split connection type
@@ -38,24 +58,7 @@ input_pins = ["P0_29", "P0_02", "P1_13", "P0_03"]
 output_pins = ["P1_06", "P0_10", "P0_09"]
 
 
-[layout]
-rows = 4
-cols = 6
-layers = 2
-keymap = [
-    [
-        ["A", "B", "C","A", "B", "C"],
-        ["Kc1", "Kc2", "Kc3","A", "B", "C"],
-        ["LCtrl", "MO(1)", "LShift","A", "B", "C"],
-        ["OSL(1)", "LT(2, Kc9)", "LM(1, LShift | LGui)","A", "B", "C"]
-    ],
-    [
-        ["_", "TT(1)", "TG(2)","A", "B", "C"],
-        ["_", "_", "_","A", "B", "C",
-        ["_", "_", "_","A", "B", "C"],
-        ["_", "_", "_","A", "B", "C"]
-    ],
-]
+
 
 [light]
 # All light pins are high-active by default, uncomment if you want it to be low-active
