@@ -92,8 +92,8 @@ col_offset = 0
 
 [split.central.matrix]
 matrix_type = "normal"
-row_pins = ["P0_12", "P0_13", "P0_14", "P0_15","P1_11"]
-col_pins= ["P0_29", "P0_02", "P1_13", "P0_03", "P0_28", "P1_06"]
+row_pins = ["P0_09", "P0_10", "P1_11", "P1_13","P1_15"]
+col_pins= ["P0_22", "P0_24", "P1_00", "P0_11", "P1_04", "P1_06"]
 
 [[split.peripheral]]
 rows = 5
@@ -103,5 +103,5 @@ col_offset = 0
 
 [split.peripheral.matrix]
 matrix_type = "normal"
-row_pins = ["P0_12", "P0_13", "P0_14", "P0_15","P1_11"]
-col_pins = ["P0_29", "P0_02", "P1_13", "P0_03", "P0_28", "P1_06"]
+row_pins = ["P0_09", "P0_10", "P1_11", "P1_13","P1_15"]
+col_pins= ["P0_22", "P0_24", "P1_00", "P0_11", "P1_04", "P1_06"]
