@@ -5,7 +5,7 @@ product_name = "Totem_Max"
 vendor_id = 0xFEED
 product_id = 0xCAD1
 manufacturer = "Cube_Studio"
-board = "nice!nano_v2"
+chip = "nrf52840"
 
 
 [layout]
@@ -82,6 +82,25 @@ TRNS  TRNS TRNS TRNS TRNS TRNS                 TRNS  TRNS TRNS TRNS TRNS TRNS
                    TRNS TRNS TRNS TRNS     TRNS TRNS TRNS TRNS
 """
 
+
+[ble]
+# Whether the ble is enabled
+enabled = true
+# BLE related pins, ignore any of them if you don't have
+battery_adc_pin = "vddh"
+# If the voltage divider is used for adc, you can use the following two values to define a voltage divider.
+# For example, nice!nano have 806 + 2M resistors, the saadc measures voltage on 2M resistor, so the two values should be set to 2000 and 2806
+# Measured resistance for input adc, it should be less than adc_divider_total
+adc_divider_measured = 2000
+# Total resistance of the full path for input adc
+adc_divider_total = 2806
+# [Deprecated] Pin that reads battery's charging state, `low-active` means the battery is charging when `charge_state.pin` is low
+# Input pin that indicates the charging state
+# charge_state = { pin = "PIN_1", low_active = true }
+# [Deprecated] Output LED pin that blinks when the battery is low
+# charge_led= { pin = "PIN_2", low_active = true }
+
+
 [split]
 # split connection type
 connection = "ble"
@@ -107,3 +126,7 @@ col_offset = 0
 matrix_type = "normal"
 row_pins = ["P0_09", "P0_10", "P1_11", "P1_13","P1_15"]
 col_pins= ["P0_22", "P0_24", "P1_00", "P0_11", "P1_04", "P1_06"]
+
+
+[rmk]
+split_central_sleep_timeout_seconds = 1800
