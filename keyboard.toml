@@ -27,7 +27,7 @@ matrix_map = """
 [[layer]]
 name = "base_layer"
 keys = """
-Escape Kc1 Kc2 Kc3 Kc4 Kc5                      Kc6, Kc7, Kc8, Kc9,   Kc0,     Backspace
+Escape Kc1 Kc2 Kc3 Kc4 Kc5                      Kc6  Kc7  Kc8  Kc9    Kc0      Backspace
 Tab    Q   W   E   R   T                        Y    U    I    O      P        Backslash
 caps   A   S   D   D   F                        H    J    K    K   Semicolon   Quote
 LShift Z   X   C   V   B                        N    M  Comma  Dot   Slash     RShift
