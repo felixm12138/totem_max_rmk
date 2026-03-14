@@ -114,7 +114,7 @@ col_offset = 0
 [split.central.matrix]
 matrix_type = "normal"
 row_pins = ["P0_09", "P0_10", "P1_11", "P1_13","P1_15"]
-col_pins= ["P0_22", "P0_24", "P1_00", "P0_11", "P1_04", "P1_06"]
+col_pins= ["P1_06", "P1_04", "P0_11", "P1_00", "P0_24", "P0_22"]
 
 [[split.peripheral]]
 rows = 5
@@ -125,7 +125,7 @@ col_offset = 0
 [split.peripheral.matrix]
 matrix_type = "normal"
 row_pins = ["P0_09", "P0_10", "P1_11", "P1_13","P1_15"]
-col_pins= ["P1_06", "P1_04", "P0_11", "P1_00", "P0_24", "P0_22"]
+col_pins= ["P0_22", "P0_24", "P1_00", "P0_11", "P1_04", "P1_06"]
 
 [rmk]
 split_central_sleep_timeout_seconds = 1800
