@@ -29,7 +29,7 @@ name = "base_layer"
 keys = """
 Escape Kc1 Kc2 Kc3 Kc4 Kc5                      Kc6  Kc7  Kc8  Kc9    Kc0      Backspace
 Tab    Q   W   E   R   T                        Y    U    I    O      P        Backslash
-caps   A   S   D   D   F                        H    J    K    K   Semicolon   Quote
+caps   A   S   D   F   G                        H    J    K    L   Semicolon   Quote
 LShift Z   X   C   V   B                        N    M  Comma  Dot   Slash     RShift
        LCtrl LGui LAlt  Space            Space RAlt RGui RCtrl
 """
